@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "ContactSubmission": {
+      "title": "ContactSubmission",
+      "description": "A contact form submission from a user.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "message": { "type": "string" },
+        "createdAt": { "type": "timestamp" }
+      },
+      "required": ["name", "email", "message", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/contacts/{contactId}": {
+      "schema": { "$ref": "ContactSubmission" },
+      "description": "Stores contact form submissions."
+    }
+  }
+}

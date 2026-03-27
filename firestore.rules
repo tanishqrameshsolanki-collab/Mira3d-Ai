@@ -1,0 +1,62 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: contacts
+    // Document ID: auto-generated
+    // Fields:
+    //   - name: string (required, < 100 chars)
+    //   - email: string (required, valid email)
+    //   - phone: string (optional, < 20 chars)
+    //   - inquiryType: string (required, < 50 chars)
+    //   - message: string (required, < 5000 chars)
+    //   - createdAt: timestamp (required)
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    function isAuthenticated() {
+       return request.auth != null;
+    }
+    
+    function isValidEmail(email) {
+       return email is string &&
+         email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    function isValidContactSubmission(data) {
+      return hasOnlyAllowedFields(['name', 'email', 'phone', 'inquiryType', 'message', 'createdAt']) &&
+             data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             data.email is string && isValidEmail(data.email) &&
+             (!('phone' in data) || (data.phone is string && data.phone.size() < 20)) &&
+             data.inquiryType is string && data.inquiryType.size() > 0 && data.inquiryType.size() < 50 &&
+             data.message is string && data.message.size() > 0 && data.message.size() < 5000 &&
+             data.createdAt == request.time;
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+    
+    match /contacts/{contactId} {
+      // Anyone can submit a contact form
+      allow create: if isValidContactSubmission(request.resource.data);
+      // Only admins (to be defined) can read/update/delete. For now, deny.
+      allow read, update, delete: if false;
+    }
+    
+    // Default deny
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

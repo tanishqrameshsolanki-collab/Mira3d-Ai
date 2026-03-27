@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-brand-bg: #FBFBFD;
+  --color-brand-primary: #FFD700;
+  --color-brand-text: #1D1D1F;
+  --color-brand-muted: #6E6E73;
+  --color-brand-card: #FFFFFF;
+  --color-brand-darkGray: #F5F5F7;
+  --color-brand-border: rgba(0, 0, 0, 0.05);
+  --color-nav-bg: rgba(255, 255, 255, 0.72);
+
+  --background: var(--color-brand-bg);
+  --foreground: var(--color-brand-text);
+  --card: var(--color-brand-card);
+  --card-foreground: var(--color-brand-text);
+  --popover: var(--color-brand-card);
+  --popover-foreground: var(--color-brand-text);
+  --primary: var(--color-brand-primary);
+  --primary-foreground: #000000;
+  --secondary: var(--color-brand-darkGray);
+  --secondary-foreground: var(--color-brand-text);
+  --muted: var(--color-brand-darkGray);
+  --muted-foreground: var(--color-brand-muted);
+  --accent: var(--color-brand-darkGray);
+  --accent-foreground: var(--color-brand-text);
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: var(--color-brand-border);
+  --input: var(--color-brand-border);
+  --ring: var(--color-brand-primary);
+  --radius: 1.5rem;
+}
+
+.dark {
+  --color-brand-bg: #000000;
+  --color-brand-primary: #FFD700;
+  --color-brand-text: #F5F5F7;
+  --color-brand-muted: #A1A1A6;
+  --color-brand-card: #111111;
+  --color-brand-darkGray: #1C1C1E;
+  --color-brand-border: rgba(255, 255, 255, 0.05);
+  --color-nav-bg: rgba(28, 28, 30, 0.72);
+
+  --background: var(--color-brand-bg);
+  --foreground: var(--color-brand-text);
+  --card: var(--color-brand-card);
+  --card-foreground: var(--color-brand-text);
+  --popover: var(--color-brand-card);
+  --popover-foreground: var(--color-brand-text);
+  --primary: var(--color-brand-primary);
+  --primary-foreground: #000000;
+  --secondary: var(--color-brand-darkGray);
+  --secondary-foreground: var(--color-brand-text);
+  --muted: var(--color-brand-darkGray);
+  --muted-foreground: var(--color-brand-muted);
+  --accent: var(--color-brand-darkGray);
+  --accent-foreground: var(--color-brand-text);
+  --border: var(--color-brand-border);
+  --input: var(--color-brand-border);
+  --ring: var(--color-brand-primary);
+}
+
+@theme {
+  --color-brand-bg: var(--color-brand-bg);
+  --color-brand-primary: var(--color-brand-primary);
+  --color-brand-text: var(--color-brand-text);
+  --color-brand-muted: var(--color-brand-muted);
+  --color-brand-card: var(--color-brand-card);
+  --color-brand-darkGray: var(--color-brand-darkGray);
+  --color-brand-border: var(--color-brand-border);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius: var(--radius);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-muted);
+}
+
+/* Technical / Pro Software Glassmorphism */
+.apple-glass {
+  background: var(--color-brand-card);
+  border: 1px solid var(--color-brand-border);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.dark .apple-glass {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.apple-glass-nav {
+  background: var(--color-nav-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.hover-invert:hover {
+  background: var(--color-brand-primary);
+  color: #000;
+}
+

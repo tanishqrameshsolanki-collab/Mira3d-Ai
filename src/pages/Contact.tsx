@@ -141,15 +141,15 @@ export default function Contact() {
               <ul className="space-y-6 text-sm font-medium text-brand-muted">
                 <li className="flex items-start group">
                   <Phone className="w-5 h-5 mr-4 text-brand-primary shrink-0 group-hover:scale-110 transition-transform" />
-                  <a href="tel:+15550123456" className="hover:text-foreground transition-colors">+1 (555) 012-3456</a>
+                  <a href="tel:+919928807923" className="hover:text-foreground transition-colors">+91-9928807923</a>
                 </li>
                 <li className="flex items-start group">
                   <Mail className="w-5 h-5 mr-4 text-brand-primary shrink-0 group-hover:scale-110 transition-transform" />
-                  <a href="mailto:user@example.com" className="hover:text-foreground transition-colors">user@example.com</a>
+                  <a href="mailto:support@mira3d.com" className="hover:text-foreground transition-colors">support@mira3d.com</a>
                 </li>
                 <li className="flex items-start group">
                   <MapPin className="w-5 h-5 mr-4 text-brand-primary shrink-0 group-hover:scale-110 transition-transform" />
-                  <span className="leading-relaxed">123 Main St, Suite 403<br />Springfield, IL 62704<br />United States</span>
+                  <span className="leading-relaxed">403, Atlanta Estate,<br />Goregaon (E),<br />Mumbai - 400063.</span>
                 </li>
               </ul>
             </div>

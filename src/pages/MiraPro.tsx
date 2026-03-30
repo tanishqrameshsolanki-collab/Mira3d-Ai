@@ -13,8 +13,8 @@ export default function MiraPro() {
           transition={{ duration: 0.8 }}
           className="text-center max-w-4xl mx-auto mb-20"
         >
-          <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tighter text-foreground mb-6">
-            MIRA<span className="text-brand-primary">pro</span>
+          <h1 className="flex justify-center mb-6">
+            <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro Logo" className="h-16 md:h-24 object-contain filter brightness-0 dark:invert" />
           </h1>
           <p className="text-xl md:text-2xl text-brand-muted font-medium leading-relaxed">
             The ultimate build processing software for professionals. Making complex 3D printing workflows easier than ever.

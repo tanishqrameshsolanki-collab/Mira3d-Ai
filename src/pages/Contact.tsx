@@ -120,7 +120,6 @@ export default function Contact() {
                       <option value="Product Demo">Product Demo</option>
                       <option value="Technical Support">Technical Support</option>
                       <option value="Partnership">Partnership</option>
-                      <option value="Career">Career</option>
                       <option value="Other">Other</option>
                     </select>
                   </div>

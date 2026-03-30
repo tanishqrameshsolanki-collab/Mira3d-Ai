@@ -22,7 +22,6 @@ export default function Footer() {
               <li><Link to="/products" className="hover:text-brand-primary transition-colors">Products</Link></li>
               <li><Link to="/resources" className="hover:text-brand-primary transition-colors">Resources</Link></li>
               <li><Link to="/about" className="hover:text-brand-primary transition-colors">About Us</Link></li>
-              <li><Link to="/contact?inquiry=Career" className="hover:text-brand-primary transition-colors">Career</Link></li>
               <li><Link to="/contact" className="hover:text-brand-primary transition-colors">Contact Us</Link></li>
               <li><Link to="/contact?inquiry=Partnership" className="hover:text-brand-primary transition-colors">Become our Distributor</Link></li>
             </ul>

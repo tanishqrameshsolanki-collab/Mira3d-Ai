@@ -28,7 +28,7 @@ export default function DownloadCTA() {
                 <button className="w-full sm:w-auto flex items-center justify-between gap-6 bg-black dark:bg-white text-white dark:text-black px-8 py-5 rounded-full hover:bg-[#1A1A1A] dark:hover:bg-gray-200 transition-colors duration-300 group shadow-lg">
                   <div className="flex flex-col items-start">
                     <span className="text-sm text-white/60 dark:text-black/60 font-medium mb-1">Download for Windows</span>
-                    <span className="text-xl font-bold tracking-tight group-hover:text-brand-primary dark:group-hover:text-brand-primary transition-colors">MIRApro</span>
+                    <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro" className="h-5 object-contain filter brightness-0 invert dark:invert-0 group-hover:brightness-100 group-hover:sepia group-hover:hue-rotate-[-50deg] group-hover:saturate-[5] transition-all" />
                   </div>
                   <Monitor className="w-8 h-8 opacity-80" />
                 </button>
@@ -36,7 +36,7 @@ export default function DownloadCTA() {
                 <button className="w-full sm:w-auto flex items-center justify-between gap-6 bg-white dark:bg-[#2C2C2E] text-brand-text px-8 py-5 rounded-full hover:bg-gray-50 dark:hover:bg-[#3A3A3C] transition-colors duration-300 group shadow-sm border border-black/5 dark:border-white/5">
                   <div className="flex flex-col items-start">
                     <span className="text-sm text-brand-muted font-medium mb-1">Download for macOS</span>
-                    <span className="text-xl font-bold tracking-tight group-hover:text-brand-primary transition-colors">MIRAmax</span>
+                    <img src="https://mira3dp.com/images/product_miramaxwhite.png" alt="MIRAmax" className="h-5 object-contain filter brightness-0 dark:invert group-hover:brightness-100 group-hover:sepia group-hover:hue-rotate-[-50deg] group-hover:saturate-[5] transition-all" />
                   </div>
                   <Apple className="w-8 h-8 opacity-80" />
                 </button>
@@ -44,7 +44,7 @@ export default function DownloadCTA() {
                 <button className="w-full sm:w-auto flex items-center justify-between gap-6 bg-white dark:bg-[#2C2C2E] text-brand-text px-8 py-5 rounded-full hover:bg-gray-50 dark:hover:bg-[#3A3A3C] transition-colors duration-300 group shadow-sm border border-black/5 dark:border-white/5">
                   <div className="flex flex-col items-start">
                     <span className="text-sm text-brand-muted font-medium mb-1">Download for Linux</span>
-                    <span className="text-xl font-bold tracking-tight group-hover:text-brand-primary transition-colors">MIRAanalyse</span>
+                    <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse" className="h-5 object-contain filter brightness-0 dark:invert group-hover:brightness-100 group-hover:sepia group-hover:hue-rotate-[-50deg] group-hover:saturate-[5] transition-all" />
                   </div>
                   <Terminal className="w-8 h-8 opacity-80" />
                 </button>

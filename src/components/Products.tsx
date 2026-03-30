@@ -7,7 +7,7 @@ const products = [
     name: "MIRApro",
     specialty: "Jewellery / Dental",
     description: "Build preparation software specialised for Jewellery / Dental.",
-    logo: null,
+    logo: "https://mira3dp.com/images/product_miraprowhite.png",
     image: "https://mira3dp.com/images/productbangle.png",
     video: "/file_19.mp4",
     link: "/mira-pro"
@@ -16,7 +16,7 @@ const products = [
     name: "MIRAmax",
     specialty: "Engineering",
     description: "Build preparation software specialised for Engineering.",
-    logo: null,
+    logo: "https://mira3dp.com/images/product_miramaxwhite.png",
     image: "https://mira3dp.com/images/producteng%20(5).png",
     video: null,
     link: "/mira-max"

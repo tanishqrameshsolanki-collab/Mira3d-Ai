@@ -1,6 +1,26 @@
 import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
+const partnerLogos = [
+  { name: "AJAX", src: "/logos/ajax.png" },
+  { name: "Altair Consulting", src: "/logos/altair.png" },
+  { name: "Arrdy", src: "/logos/arrdy.png" },
+  { name: "Bluestone", src: "/logos/bluestone.png" },
+  { name: "Caratlane", src: "/logos/caratane.png" },
+  { name: "Cascade Star", src: "/logos/cascadstar.png" },
+  { name: "Cindia", src: "/logos/cindia.png" },
+  { name: "Maker.ai", src: "/logos/maker.png" },
+  { name: "Octagon Precision", src: "/logos/octagon.png" },
+  { name: "RRCAT", src: "/logos/rrcat.png" },
+  { name: "Schraffur Studios", src: "/logos/schraffur_studios.webp" },
+  { name: "Sculptoris Innovation", src: "/logos/sculptoris.png" },
+  { name: "Sinterjet", src: "/logos/sinterjet.webp" },
+  { name: "STPL", src: "/logos/stpl.png" },
+  { name: "Tecumseh", src: "/logos/tecumseh.png" },
+  { name: "Titan Company", src: "/logos/Titan_Company_Logo-1.webp" },
+  { name: "Uni-Design", src: "/logos/uni.png" }
+];
+
 export default function About() {
   return (
     <main className="pt-32 pb-20 min-h-screen bg-brand-bg">
@@ -20,12 +40,12 @@ export default function About() {
               {/* MIRApro */}
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
                 <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">pro</span></h3>
+                  <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro" className="h-8 object-contain ml-auto mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">Launched in 2023</p>
                 </div>
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
                 <div className="w-full pl-16 md:w-1/2 md:pl-12 md:hidden">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">pro</span></h3>
+                  <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">Launched in 2023</p>
                 </div>
               </motion.div>
@@ -35,7 +55,7 @@ export default function About() {
                 <div className="hidden md:block w-1/2 pr-12"></div>
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
                 <div className="w-full pl-16 md:w-1/2 md:pl-12 text-left">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">max</span></h3>
+                  <img src="https://mira3dp.com/images/product_miramaxwhite.png" alt="MIRAmax" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">Launched in 2023</p>
                 </div>
               </motion.div>
@@ -43,12 +63,12 @@ export default function About() {
               {/* MIRAanalyse */}
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
                 <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">analyse</span></h3>
+                  <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse" className="h-8 object-contain ml-auto mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">Launched in 2024</p>
                 </div>
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
                 <div className="w-full pl-16 md:w-1/2 md:pl-12 md:hidden">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">analyse</span></h3>
+                  <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">Launched in 2024</p>
                 </div>
               </motion.div>
@@ -66,12 +86,12 @@ export default function About() {
               {/* MIRAAkaar */}
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
                 <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">Akaar</span></h3>
+                  <img src="https://mira3dp.com/images/ProductsMirakar.png" alt="MIRA Akar" className="h-8 object-contain ml-auto mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">New Launch - 2025</p>
                 </div>
                 <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
                 <div className="w-full pl-16 md:w-1/2 md:pl-12 md:hidden">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">Akaar</span></h3>
+                  <img src="https://mira3dp.com/images/ProductsMirakar.png" alt="MIRA Akar" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
                   <p className="text-brand-muted text-sm italic">New Launch - 2025</p>
                 </div>
               </motion.div>
@@ -90,6 +110,56 @@ export default function About() {
               <div className="text-brand-muted font-medium uppercase tracking-widest text-sm">{stat.label}</div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="mb-32">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-text mb-10 tracking-tight">Partnerships & Clients</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {/* OEMs */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
+              <h3 className="text-xl font-bold text-brand-text mb-4">OEMs</h3>
+              <p className="text-brand-muted leading-relaxed font-medium">Hardware / Manufacturing Partners & Equipment Providers</p>
+            </motion.div>
+
+            {/* Ecosystem Partners */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
+              <h3 className="text-xl font-bold text-brand-text mb-4">Ecosystem Partners</h3>
+              <p className="text-brand-muted leading-relaxed font-medium">Supply Chain / Component Partners, Material Collaborators</p>
+            </motion.div>
+
+            {/* Distributors */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
+              <h3 className="text-xl font-bold text-brand-text mb-4">Distributors</h3>
+              <p className="text-brand-muted leading-relaxed font-medium">Solution Providers, Distribution Partners, Sales Channels</p>
+            </motion.div>
+
+            {/* Professionals */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
+              <h3 className="text-xl font-bold text-brand-text mb-4">Professionals</h3>
+              <p className="text-brand-muted leading-relaxed font-medium">Industry Leaders, Academic Institutions, Technology Innovators</p>
+            </motion.div>
+          </div>
+
+          {/* Logos Marquee */}
+          <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.4 }} className="overflow-hidden relative w-full pt-12">
+            {/* Gradient masks for smooth fade at edges */}
+            <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-brand-bg to-transparent z-10 pointer-events-none"></div>
+            <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-brand-bg to-transparent z-10 pointer-events-none"></div>
+            
+            <div className="flex w-max animate-marquee">
+              {/* Duplicate the array to create a seamless infinite loop */}
+              {[...partnerLogos, ...partnerLogos].map((logo, i) => (
+                <div key={i} className="flex items-center justify-center w-48 mx-8">
+                  <img 
+                    src={logo.src} 
+                    alt={logo.name} 
+                    className="max-h-16 max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
 
         <div className="mb-32">

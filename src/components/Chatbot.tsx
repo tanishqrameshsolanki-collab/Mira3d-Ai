@@ -86,7 +86,10 @@ export default function Chatbot() {
                   <img src="https://mira3dp.com/images/Mira3D%20white%203.png" alt="MIRA3D" className="w-5 h-5 object-contain brightness-0" />
                 </div>
                 <div>
-                  <h3 className="text-foreground font-bold text-sm">MIRA3D Assistant</h3>
+                  <h3 className="text-foreground font-bold text-sm flex items-center gap-1.5">
+                    <img src="https://mira3dp.com/images/Mira3D%20white%203.png" alt="MIRA3D" className="h-3 object-contain filter brightness-0 dark:invert" />
+                    Assistant
+                  </h3>
                   <p className="text-brand-primary text-xs flex items-center gap-1">
                     <span className="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span> Online
                   </p>

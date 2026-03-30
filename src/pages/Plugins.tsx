@@ -49,7 +49,9 @@ export default function Plugins() {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">MIRAanalyse</h2>
+            <h2 className="flex items-center mb-6">
+              <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse Logo" className="h-12 md:h-16 object-contain filter brightness-0 dark:invert" />
+            </h2>
             <p className="text-lg text-brand-muted leading-relaxed font-medium">
               Deep dive into your printing data. MIRAanalyse provides comprehensive telemetry, failure prediction, and post-print analysis to continuously improve your yield.
             </p>
@@ -68,7 +70,7 @@ export default function Plugins() {
             </div>
             
             <button className="inline-flex items-center gap-2 bg-blue-500/10 text-blue-400 font-bold rounded-[20px] px-8 py-4 hover:bg-blue-500/20 transition-all mt-8 group">
-              Learn more about Analyze <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Learn more about MIRAanalyse <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
         </div>
@@ -103,9 +105,11 @@ export default function Plugins() {
             transition={{ duration: 0.8 }}
             className="space-y-8 md:order-first"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground tracking-tight">MIRA Akar</h2>
+            <h2 className="flex items-center mb-6">
+              <img src="https://mira3dp.com/images/ProductsMirakar.png" alt="MIRA Akar Logo" className="h-12 md:h-16 object-contain filter brightness-0 dark:invert" />
+            </h2>
             <p className="text-lg text-brand-muted leading-relaxed font-medium">
-              Advanced machine vision integration. MIRA Akar uses camera feeds to detect anomalies, verify layer adhesion, and automatically pause prints if a failure is imminent.
+              Advanced machine vision integration. MIRAakar uses camera feeds to detect anomalies, verify layer adhesion, and automatically pause prints if a failure is imminent.
             </p>
             
             <ul className="space-y-4 text-brand-muted font-medium">
@@ -124,7 +128,7 @@ export default function Plugins() {
             </ul>
             
             <button className="inline-flex items-center gap-2 bg-purple-500/10 text-purple-400 font-bold rounded-[20px] px-8 py-4 hover:bg-purple-500/20 transition-all mt-8 group">
-              Learn more about Akar <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              Learn more about MIRAakar <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
           </motion.div>
         </div>

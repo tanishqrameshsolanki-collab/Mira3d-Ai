@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Factory, Network, Users, GraduationCap } from 'lucide-react';
 
 const partnerLogos = [
   { name: "AJAX", src: "/logos/ajax.png" },
@@ -30,72 +30,48 @@ export default function About() {
           <p className="text-xl text-brand-muted leading-relaxed font-medium">Headquartered in Mumbai, Samisan Tech Private Limited is a software development company specialized in Digital Manufacturing and Machine Vision applications. Our core product is the MIRA3D Build Processing Software suite. The product line includes MIRApro (for jewelry/ dental industry), MIRAmax (for manufacturing sector), & MIRAanalyse (for part inspection). We are a team of mathematicians and software developers who can also build custom software for your use case.</p>
         </motion.div>
 
-        <div className="mb-32 max-w-3xl mx-auto">
+        <div className="mb-32 max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-brand-text mb-16 tracking-tight">Our Product Line</h2>
-          <div className="relative">
-            {/* Vertical Line */}
-            <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:-translate-x-1/2"></div>
-            
-            <div className="space-y-12">
-              {/* MIRApro */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
-                <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro" className="h-8 object-contain ml-auto mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">Launched in 2023</p>
-                </div>
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
-                <div className="w-full pl-16 md:w-1/2 md:pl-12 md:hidden">
-                  <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">Launched in 2023</p>
-                </div>
-              </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* MIRApro */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] flex flex-col items-center justify-center text-center group hover:border-brand-primary/50 transition-colors">
+              <img src="https://mira3dp.com/images/product_miraprowhite.png" alt="MIRApro" className="h-10 object-contain mb-4 filter brightness-0 dark:invert group-hover:scale-105 transition-transform" />
+              <div className="mt-auto pt-4">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-bold uppercase tracking-wider">Launched 2023</span>
+              </div>
+            </motion.div>
 
-              {/* MIRAmax */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
-                <div className="hidden md:block w-1/2 pr-12"></div>
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
-                <div className="w-full pl-16 md:w-1/2 md:pl-12 text-left">
-                  <img src="https://mira3dp.com/images/product_miramaxwhite.png" alt="MIRAmax" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">Launched in 2023</p>
-                </div>
-              </motion.div>
+            {/* MIRAmax */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] flex flex-col items-center justify-center text-center group hover:border-brand-primary/50 transition-colors">
+              <img src="https://mira3dp.com/images/product_miramaxwhite.png" alt="MIRAmax" className="h-10 object-contain mb-4 filter brightness-0 dark:invert group-hover:scale-105 transition-transform" />
+              <div className="mt-auto pt-4">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-bold uppercase tracking-wider">Launched 2023</span>
+              </div>
+            </motion.div>
 
-              {/* MIRAanalyse */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
-                <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse" className="h-8 object-contain ml-auto mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">Launched in 2024</p>
-                </div>
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
-                <div className="w-full pl-16 md:w-1/2 md:pl-12 md:hidden">
-                  <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">Launched in 2024</p>
-                </div>
-              </motion.div>
+            {/* MIRAanalyse */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] flex flex-col items-center justify-center text-center group hover:border-brand-primary/50 transition-colors">
+              <img src="https://mira3dp.com/images/product_miranalysewhite.png" alt="MIRAanalyse" className="h-10 object-contain mb-4 filter brightness-0 dark:invert group-hover:scale-105 transition-transform" />
+              <div className="mt-auto pt-4">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-bold uppercase tracking-wider">Launched 2024</span>
+              </div>
+            </motion.div>
 
-              {/* MIRAfinder */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
-                <div className="hidden md:block w-1/2 pr-12"></div>
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
-                <div className="w-full pl-16 md:w-1/2 md:pl-12 text-left">
-                  <h3 className="text-2xl font-bold text-brand-text">MIRA<span className="text-brand-primary">finder</span></h3>
-                  <p className="text-brand-muted text-sm italic">Launched in 2024</p>
-                </div>
-              </motion.div>
+            {/* MIRAfinder */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] flex flex-col items-center justify-center text-center group hover:border-brand-primary/50 transition-colors">
+              <h3 className="text-3xl font-bold text-brand-text mb-4 group-hover:scale-105 transition-transform">MIRA<span className="text-brand-primary">finder</span></h3>
+              <div className="mt-auto pt-4">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-brand-primary/10 text-brand-primary text-xs font-bold uppercase tracking-wider">Launched 2024</span>
+              </div>
+            </motion.div>
 
-              {/* MIRAAkaar */}
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="relative flex items-center md:justify-between w-full">
-                <div className="hidden md:block w-1/2 pr-12 text-right">
-                  <img src="https://mira3dp.com/images/ProductsMirakar.png" alt="MIRA Akar" className="h-8 object-contain ml-auto mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">New Launch - 2025</p>
-                </div>
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-brand-bg border-2 border-brand-primary -translate-x-1/2 z-10"></div>
-                <div className="w-full pl-16 md:w-1/2 md:pl-12 md:hidden">
-                  <img src="https://mira3dp.com/images/ProductsMirakar.png" alt="MIRA Akar" className="h-8 object-contain mb-2 filter brightness-0 dark:invert" />
-                  <p className="text-brand-muted text-sm italic">New Launch - 2025</p>
-                </div>
-              </motion.div>
-            </div>
+            {/* MIRAAkaar */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.4 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] flex flex-col items-center justify-center text-center group hover:border-brand-primary/50 transition-colors lg:col-span-2">
+              <img src="https://mira3dp.com/images/ProductsMirakar.png" alt="MIRA Akar" className="h-10 object-contain mb-4 filter brightness-0 dark:invert group-hover:scale-105 transition-transform" />
+              <div className="mt-auto pt-4">
+                <span className="inline-block px-4 py-1.5 rounded-full bg-brand-primary text-black text-xs font-bold uppercase tracking-wider shadow-[0_0_15px_rgba(255,215,0,0.3)]">New Launch - 2025</span>
+              </div>
+            </motion.div>
           </div>
         </div>
 
@@ -117,27 +93,39 @@ export default function About() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {/* OEMs */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
-              <h3 className="text-xl font-bold text-brand-text mb-4">OEMs</h3>
-              <p className="text-brand-muted leading-relaxed font-medium">Hardware / Manufacturing Partners & Equipment Providers</p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] group hover:border-brand-primary/50 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Factory className="w-6 h-6 text-brand-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">OEMs</h3>
+              <p className="text-brand-muted leading-relaxed font-medium text-sm">Hardware / Manufacturing Partners & Equipment Providers</p>
             </motion.div>
 
             {/* Ecosystem Partners */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
-              <h3 className="text-xl font-bold text-brand-text mb-4">Ecosystem Partners</h3>
-              <p className="text-brand-muted leading-relaxed font-medium">Supply Chain / Component Partners, Material Collaborators</p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] group hover:border-brand-primary/50 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Network className="w-6 h-6 text-brand-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">Ecosystem Partners</h3>
+              <p className="text-brand-muted leading-relaxed font-medium text-sm">Supply Chain / Component Partners, Material Collaborators</p>
             </motion.div>
 
             {/* Distributors */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
-              <h3 className="text-xl font-bold text-brand-text mb-4">Distributors</h3>
-              <p className="text-brand-muted leading-relaxed font-medium">Solution Providers, Distribution Partners, Sales Channels</p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] group hover:border-brand-primary/50 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <Users className="w-6 h-6 text-brand-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">Distributors</h3>
+              <p className="text-brand-muted leading-relaxed font-medium text-sm">Solution Providers, Distribution Partners, Sales Channels</p>
             </motion.div>
 
             {/* Professionals */}
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="bg-brand-card border border-brand-border p-8 rounded-3xl">
-              <h3 className="text-xl font-bold text-brand-text mb-4">Professionals</h3>
-              <p className="text-brand-muted leading-relaxed font-medium">Industry Leaders, Academic Institutions, Technology Innovators</p>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] group hover:border-brand-primary/50 transition-colors">
+              <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <GraduationCap className="w-6 h-6 text-brand-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">Professionals</h3>
+              <p className="text-brand-muted leading-relaxed font-medium text-sm">Industry Leaders, Academic Institutions, Technology Innovators</p>
             </motion.div>
           </div>
 
@@ -165,22 +153,30 @@ export default function About() {
         <div className="mb-32">
           <h2 className="text-4xl font-bold text-center text-brand-text mb-16 tracking-tight">Our Founders</h2>
           <div className="grid md:grid-cols-2 gap-12">
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-8 rounded-[40px] flex flex-col items-center text-center">
-              <img src="https://mira3dp.com/images/mohit.png" alt="Mohit Kumar" className="w-40 h-40 rounded-full mb-6 object-cover border-2 border-brand-border" />
-              <h3 className="text-2xl font-bold text-brand-text mb-1">Mohit Kumar</h3>
-              <p className="text-brand-muted text-sm mb-4 font-medium">B.E. Mech., BITS Pilani '15<br/>Previous: Co-Founder, 3Dware</p>
-              <ul className="text-brand-muted text-sm space-y-2 font-medium">
-                <li>Built India's first TOP-DOWN DLP 3D Printer</li>
-                <li>9+ Years of 3DP industry experience</li>
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-10 rounded-[32px] flex flex-col items-center text-center group hover:border-brand-primary/50 transition-colors">
+              <div className="relative mb-8">
+                <div className="absolute inset-0 bg-brand-primary/20 rounded-full blur-xl group-hover:blur-2xl transition-all opacity-0 group-hover:opacity-100"></div>
+                <img src="https://mira3dp.com/images/mohit.png" alt="Mohit Kumar" className="relative w-40 h-40 rounded-full object-cover border-4 border-brand-bg shadow-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-brand-text mb-2">Mohit Kumar</h3>
+              <p className="text-brand-primary text-sm mb-6 font-bold uppercase tracking-wider">Co-Founder</p>
+              <p className="text-brand-muted text-sm mb-6 font-medium leading-relaxed">B.E. Mech., BITS Pilani '15<br/>Previous: Co-Founder, 3Dware</p>
+              <ul className="text-brand-text text-sm space-y-3 font-medium bg-brand-bg/50 p-6 rounded-2xl w-full text-left">
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" /> Built India's first TOP-DOWN DLP 3D Printer</li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" /> 9+ Years of 3DP industry experience</li>
               </ul>
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-8 rounded-[40px] flex flex-col items-center text-center">
-              <img src="https://mira3dp.com/images/jeet.png" alt="Dr. Jeet Desai" className="w-40 h-40 rounded-full mb-6 object-cover border-2 border-brand-border" />
-              <h3 className="text-2xl font-bold text-brand-text mb-1">Dr. Jeet Desai</h3>
-              <p className="text-brand-muted text-sm mb-4 font-medium">Ph.D in Applied Mathematics from UP, Paris<br/>B.E. Mech., BITS Pilani '17</p>
-              <ul className="text-brand-muted text-sm space-y-2 font-medium">
-                <li>Funded by Airbus, Renault, Safran & ESI</li>
-                <li>Specializes in Computational Geometry & HPC</li>
+            <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="bg-brand-card border border-brand-border p-10 rounded-[32px] flex flex-col items-center text-center group hover:border-brand-primary/50 transition-colors">
+              <div className="relative mb-8">
+                <div className="absolute inset-0 bg-brand-primary/20 rounded-full blur-xl group-hover:blur-2xl transition-all opacity-0 group-hover:opacity-100"></div>
+                <img src="https://mira3dp.com/images/jeet.png" alt="Dr. Jeet Desai" className="relative w-40 h-40 rounded-full object-cover border-4 border-brand-bg shadow-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-brand-text mb-2">Dr. Jeet Desai</h3>
+              <p className="text-brand-primary text-sm mb-6 font-bold uppercase tracking-wider">Co-Founder</p>
+              <p className="text-brand-muted text-sm mb-6 font-medium leading-relaxed">Ph.D in Applied Mathematics from UP, Paris<br/>B.E. Mech., BITS Pilani '17</p>
+              <ul className="text-brand-text text-sm space-y-3 font-medium bg-brand-bg/50 p-6 rounded-2xl w-full text-left">
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" /> Funded by Airbus, Renault, Safran & ESI</li>
+                <li className="flex items-start gap-3"><CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0" /> Specializes in Computational Geometry & HPC</li>
               </ul>
             </motion.div>
           </div>
@@ -207,10 +203,12 @@ export default function About() {
                 description: "Offering AM services (in metal and polymer) to assist in rapid product development through our vendor network—integrated with our in-house design optimization support."
               }
             ].map((service, i) => (
-              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-brand-card border border-brand-border p-8 rounded-[40px] flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-brand-primary shrink-0 mt-1" />
+              <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="bg-brand-card border border-brand-border p-8 rounded-[32px] flex flex-col sm:flex-row items-start gap-6 group hover:border-brand-primary/50 transition-colors">
+                <div className="w-12 h-12 rounded-2xl bg-brand-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                  <CheckCircle2 className="w-6 h-6 text-brand-primary" />
+                </div>
                 <div>
-                  <h3 className="text-xl font-bold text-brand-text mb-2">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-brand-text mb-3">{service.title}</h3>
                   <p className="text-brand-muted leading-relaxed text-sm font-medium">{service.description}</p>
                 </div>
               </motion.div>

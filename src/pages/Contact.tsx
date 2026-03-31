@@ -154,15 +154,17 @@ export default function Contact() {
               </ul>
             </div>
 
-            <div className="bg-card border border-border p-4 rounded-[40px] overflow-hidden h-[300px]">
+            <div className="bg-card border border-border rounded-[40px] overflow-hidden h-[400px] relative group">
+              <div className="absolute inset-0 bg-brand-primary/5 pointer-events-none group-hover:bg-transparent transition-colors z-10"></div>
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.5155346866104!2d72.8550193742543!3d19.172672548932418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b726eb43471b%3A0x66d16aba241571a7!2sSamisan%20Tech%20Pvt%20Ltd%20(Software%20Development%7C%203D%20Printing%7C%20Automation%7C%20Industry%204.0)!5e0!3m2!1sen!2sin!4v1742897762072!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
-                style={{ border: 0, borderRadius: '24px' }} 
+                style={{ border: 0 }} 
                 allowFullScreen 
                 loading="lazy" 
                 referrerPolicy="no-referrer-when-downgrade"
+                className="relative z-0 grayscale opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
               ></iframe>
             </div>
           </motion.div>
